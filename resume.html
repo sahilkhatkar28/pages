@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sahil Khatkar - IoT Engineer</title>
+  <title>Sahil Khatkar - IoT Developer</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -19,24 +19,26 @@
     header {
       background-color: #fff;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-      padding: 20px 40px;
+      padding: 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
     }
 
     header h1 {
-      font-size: 2em;
+      font-size: 1.5em;
       margin: 0;
       color: #333;
     }
 
     header nav {
       display: flex;
+      flex-wrap: wrap;
     }
 
     header nav a {
-      margin: 0 15px;
+      margin: 5px 10px;
       color: #333;
       text-decoration: none;
       font-weight: 300;
@@ -49,7 +51,7 @@
 
     main {
       flex: 1;
-      padding: 40px 20px;
+      padding: 20px;
     }
 
     .section {
@@ -73,16 +75,18 @@
     .flex-container {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
       gap: 20px; /* Space between sections */
     }
 
     .flex-item {
       flex: 1; /* Allow items to grow equally */
-      min-width: 300px; /* Minimum width for responsiveness */
+      min-width: 250px; /* Minimum width for responsiveness */
+      max-width: 500px; /* Max width to maintain readability */
     }
 
     .section h2 {
-      font-size: 2em;
+      font-size: 1.8em;
       margin-bottom: 10px;
       color: #333;
     }
@@ -95,7 +99,7 @@
     }
 
     .section img {
-      width: 80%;
+      width: 100%; /* Ensure images are responsive */
       max-width: 400px;
       border-radius: 10px;
       margin: 10px 0;
@@ -109,7 +113,7 @@
     }
 
     .project {
-      width: 45%;
+      width: 100%; /* Full width for projects on mobile */
       padding: 15px;
       background-color: #f9f9f9;
       border-radius: 10px;
@@ -134,18 +138,14 @@
 
     /* Responsive adjustments for smaller screens */
     @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.3em;
+      }
       .section {
-        width: 100%;
+        padding: 10px;
       }
-      .flex-container {
-        flex-direction: column; /* Stack sections on small screens */
-      }
-      .image-container {
-        flex-direction: column;
-        align-items: center;
-      }
-      .project {
-        width: 100%;
+      .section h2 {
+        font-size: 1.5em;
       }
     }
   </style>
@@ -171,18 +171,17 @@
     <div class="flex-container">
       <div class="flex-item section" id="profile">
         <h2>Profile</h2>
-       
         <p>Dynamic and skilled electronic engineer with hands-on experience gained through internships in IoT development and Network Programming. Proficient in C, Python, Web Programming, SQL, and Internet protocols, adept at problem-solving and committed to staying current with industry trends.</p>
       </div>
 
       <div class="flex-item section" id="skills">
         <h2>Skills</h2>
-        <ul style="list-style: none; padding: 0; text-align: left; max-width: 600px; margin: 0 auto;">
+        <ul style="list-style: none; padding: 0; text-align: left;">
           <li><strong>Programming Languages:</strong> Python, C, Web Programming</li>
           <li><strong>Database:</strong> SQL, MongoDB</li>
           <li><strong>Cloud Platforms:</strong> AWS IoT, GitHub, Azure</li>
           <li><strong>Hardware Platforms:</strong> STM32F4DISCOVERY, ESP32, Raspberry Pi, Arduino</li>
-          <li><strong>Operating Systems & Software Tools: </strong>Ubuntu Linux, Cisco Packet Tracer, Wireshark</li>
+          <li><strong>Operating Systems & Software Tools:</strong> Ubuntu Linux, Cisco Packet Tracer, Wireshark</li>
           <li><strong>Protocols:</strong> Wi-Fi, Bluetooth, TCP/IP, MQTT, HTTP, CoAP, UDP</li>
         </ul>
       </div>
@@ -238,12 +237,11 @@
           Year: 2023
         </div>
         <div class="education-item">
-            <strong>PG Diploma in Electronics and  Communication Engineering</strong><br>
-
-            <em>Chotu Ram Polytechnic, Rohtak</em><br>
-            Grade: A (75%)<br>
-            Year: 2020
-          </div>
+          <strong>PG Diploma in Electronics and Communication Engineering</strong><br>
+          <em>Chotu Ram Polytechnic, Rohtak</em><br>
+          Grade: A (75%)<br>
+          Year: 2020
+        </div>
       </div>
     </div>
 
@@ -272,7 +270,7 @@
       <h2>Contact</h2>
       <p>Email: <a href="mailto:sahil7082142712@gmail.com" style="color: #007bff;">sahil7082142712@gmail.com</a></p>
       <p>GitHub: <a href="https://github.com/sahilkhatkar28" target="_blank" style="color: #007bff;">github.com/sahilkhatkar28</a></p>
-      <p>Linkedin: <a href="https://www.linkedin.com/in/sahil-khatkar-b55562170/"   target="_blank" style="color: #007bff;"> https://www.linkedin.com/in/sahil-khatkar-b55562170/</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/sahil-khatkar-b55562170/" target="_blank" style="color: #007bff;">linkedin.com/in/sahil-khatkar-b55562170</a></p>
     </div>
 
   </main>
