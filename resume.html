@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sahil Khatkar - IoT Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8fafc;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #fff;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 2em;
+      margin: 0;
+      color: #333;
+    }
+
+    header nav {
+      display: flex;
+    }
+
+    header nav a {
+      margin: 0 15px;
+      color: #333;
+      text-decoration: none;
+      font-weight: 300;
+    }
+
+    header nav a:hover {
+      color: #007bff;
+      text-decoration: underline;
+    }
+
+    main {
+      flex: 1;
+      padding: 40px 20px;
+    }
+
+    .section {
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+
+    /* Different background colors for each section */
+    #profile { background-color: #e7f3fe; }
+    #skills { background-color: #fce7f3; }
+    #projects { background-color: #feefc3; }
+    #internship { background-color: #e3fcef; }
+    #education { background-color: #e1bee7; }
+    #contact { background-color: #cfd8dc; }
+    #interests { background-color: #fff8e1; }
+    #achievements { background-color: #e8f5e9; }
+
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px; /* Space between sections */
+    }
+
+    .flex-item {
+      flex: 1; /* Allow items to grow equally */
+      min-width: 300px; /* Minimum width for responsiveness */
+    }
+
+    .section h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .section p, .section ul {
+      color: #555;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0;
+    }
+
+    .section img {
+      width: 80%;
+      max-width: 400px;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .project {
+      width: 45%;
+      padding: 15px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .project h3 {
+      margin-top: 0;
+    }
+
+    footer {
+      background-color: #f0f0f0;
+      padding: 20px;
+      text-align: center;
+      color: #aaa;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Responsive adjustments for smaller screens */
+    @media (max-width: 768px) {
+      .section {
+        width: 100%;
+      }
+      .flex-container {
+        flex-direction: column; /* Stack sections on small screens */
+      }
+      .image-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .project {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sahil Khatkar - IoT Developer</h1>
+    <nav>
+      <a href="#profile">Profile</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#internship">Internship</a>
+      <a href="#education">Education</a>
+      <a href="#interests">Interests</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="flex-container">
+      <div class="flex-item section" id="profile">
+        <h2>Profile</h2>
+       
+        <p>Dynamic and skilled electronic engineer with hands-on experience gained through internships in IoT development and Network Programming. Proficient in C, Python, Web Programming, SQL, and Internet protocols, adept at problem-solving and committed to staying current with industry trends.</p>
+      </div>
+
+      <div class="flex-item section" id="skills">
+        <h2>Skills</h2>
+        <ul style="list-style: none; padding: 0; text-align: left; max-width: 600px; margin: 0 auto;">
+          <li><strong>Programming Languages:</strong> Python, C, Web Programming</li>
+          <li><strong>Database:</strong> SQL, MongoDB</li>
+          <li><strong>Cloud Platforms:</strong> AWS IoT, GitHub, Azure</li>
+          <li><strong>Hardware Platforms:</strong> STM32F4DISCOVERY, ESP32, Raspberry Pi, Arduino</li>
+          <li><strong>Operating Systems & Software Tools: </strong>Ubuntu Linux, Cisco Packet Tracer, Wireshark</li>
+          <li><strong>Protocols:</strong> Wi-Fi, Bluetooth, TCP/IP, MQTT, HTTP, CoAP, UDP</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section" id="projects">
+      <h2>Projects</h2>
+      <div class="image-container">
+        <div class="project">
+          <h3>IoT-based Smart Agriculture Monitoring System</h3>
+          <img src="https://media.licdn.com/dms/image/D5612AQHiPo8hzEBEaA/article-cover_image-shrink_600_2000/0/1663584216004?e=2147483647&v=beta&t=3WVfNidSSWTWWWa46TgWC8yNOBCltb3Tdj8yUd1WUHQ" alt="Smart Agriculture">
+          <p>The goal of this project is to develop an IoT-based smart agriculture system that enhances farming practices through real-time data collection, monitoring, and automation.</p>
+        </div>
+        <div class="project">
+          <h3>Industry Machine Monitoring and Control</h3>
+          <img src="https://www.machinestalk.com/wp-content/uploads/2022/07/Machine-Monitoring-300DPI-1536x1097.png" alt="Machine Monitoring">
+          <p>This project utilizes IoT technology to track and manage industrial machinery in real-time, enhancing operational efficiency and reducing downtime.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex-container">
+      <div class="flex-item section" id="internship">
+        <h2>Internship</h2>
+        <div class="experience-item">
+          <strong>IoT Internship using Arduino & Raspberry Pi</strong><br>
+          <em>National Institute of Electronics and Information Technology</em><br>
+          Duration: 13-09-2021 to 08-10-2021<br>
+          <p>Introduction to IoT, Arduino IDE, Interfacing Sensors, Raspberry Pi Programming.</p>
+        </div>
+
+        <div class="experience-item">
+          <strong>Networking Internship</strong><br>
+          <em>Solitaire Infosys Pvt. Ltd.</em><br>
+          Duration: 18-07-2022 to 01-09-2022<br>
+          <p>Network Topologies, Ethernet, Wi-Fi, TCP Socket APIs, UDP Protocol.</p>
+        </div>
+      </div>
+
+      <div class="flex-item section" id="education">
+        <h2>Education</h2>
+        <div class="education-item">
+          <strong>PG Diploma in IoT</strong><br>
+          <em>ACTS-CDAC</em><br>
+          Grade: A (75%)<br>
+          Year: 2024
+        </div>
+
+        <div class="education-item">
+          <strong>BTech in Electronics and Communication Engineering</strong><br>
+          <em>Kurukshetra University</em><br>
+          Grade: 75%<br>
+          Year: 2023
+        </div>
+        <div class="education-item">
+            <strong>PG Diploma in Electronics and  Communication Engineering</strong><br>
+
+            <em>Chotu Ram Polytechnic, Rohtak</em><br>
+            Grade: A (75%)<br>
+            Year: 2020
+          </div>
+      </div>
+    </div>
+
+    <div class="flex-container">
+      <div class="flex-item section" id="interests">
+        <h2>Areas of Interest</h2>
+        <ul>
+          <li>Configuring Hardware</li>
+          <li>Science & Technology</li>
+          <li>Gym</li>
+          <li>Outdoor Games</li>
+        </ul>
+      </div>
+
+      <div class="flex-item section" id="achievements">
+        <h2>Extracurricular Activities / Achievements</h2>
+        <ul>
+          <li>Academic sports meet participation</li>
+          <li>Inter College Cricket tournament</li>
+          <li>Inter College Volleyball tournament</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section" id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:sahil7082142712@gmail.com" style="color: #007bff;">sahil7082142712@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/sahilkhatkar28" target="_blank" style="color: #007bff;">github.com/sahilkhatkar28</a></p>
+      <p>Linkedin: <a href="https://www.linkedin.com/in/sahil-khatkar-b55562170/"   target="_blank" style="color: #007bff;"> https://www.linkedin.com/in/sahil-khatkar-b55562170/</a></p>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Sahil Khatkar. All rights reserved.</p>
+  </footer>
+</body>
+</html>
